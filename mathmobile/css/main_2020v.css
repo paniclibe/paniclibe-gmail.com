@@ -1,0 +1,200 @@
+@charset "utf-8";
+
+/* 메인 페이지 */
+.mainpage {/* display:table;  */width:100%; max-width:770px; margin:0 auto;}
+.main_conwrap {padding:10px 0; vertical-align:middle;}
+
+.main202004  button {background:transparent}
+.main202004 #container {background:#d9d9d9;}
+.main202004 .mainpage {max-width:640px; background:#fff;}
+.main202004 .main_conwrap {padding-top:0;}
+.main202004 .main_conwrap .mainVisual {position:relative; display:block;}
+.main202004 .main_conwrap .mainVisual a {position:absolute; top:0; left:50%; display:block; width:50%; height:100%; text-align:center; line-height:100%;}
+.main202004 .main_conwrap .mainVisual a img {width:32%; margin-top:32%;}
+.main202004 .main_conwrap .mainVisual .top-swiper-pagination {position:absolute; bottom:20px; text-align: center; z-index:1000}
+.main202004 .main_conwrap .mainVisual .swiper-pagination-bullet{display:inline-block; width:12px; height:12px; background:#fff; opacity:1; text-indent:-9999px;}
+.main202004 .main_conwrap .mainVisual  .swiper-pagination-bullet-active {background: #ca2422; }
+
+/*header navigation*/
+.main202004 .tabNavi {display:table; width:130%; border-bottom:1px solid #ccc; text-align:center;}
+.main202004 .tabNavi li {display:table-cell;white-space:nowrap; padding:0 8px}
+.main202004 .tabNavi li:first-child {padding-left:10px}
+.main202004 .tabNavi li a {position:relative; display:block; padding:15px 0 14px; color:#4d4d4d; font-weight:700; font-size:15px;}
+
+.main202004 .recommCont {position:relative;}
+.main202004 .tit_cardtype {font-family:"Noto Sans KR",sans-serif; font-weight:bold; font-size:30px; padding:56px 0 40px; text-align:center}
+.main202004 .tit_cardtype img {width:100%; height:auto}
+.main202004 .recommCont  .tit_cardtype {padding-top:40px}
+
+.main202004 .recommTab  {display:table;position:relative;width:100%;background-color:#fff;}
+.main202004 .recommTab  li {display:table-cell;position:relative;height:65px;width:33.333333%;vertical-align:top; }
+.main202004 .recommTab  li:last-child{width:34.444444%;}
+.main202004 .recommTab  li::before,
+.main202004 .recommTab  li.active::before{content:'';display:block;position:absolute;bottom:0;right:0;width:100%;height:1px;background-color:#222222;}
+.main202004 .recommTab  li.active::before{background-color:#fff;}
+.main202004 .recommTab  li::after,
+.main202004 .recommTab  li.active::after{content:'';display:block;position:absolute;top:0;left:0;width:100%;height:1px;background-color:#d9d9d9;}
+.main202004 .recommTab  li.active::after{height:2px;background-color:#df5f5e;}
+.main202004 .recommTab  li:first-child a::after,
+.main202004 .recommTab  li a::before{content:'';display:block;position:absolute;top:0;right:0;width:1px;height:64px;background-color:#d9d9d9;}
+.main202004 .recommTab  li:first-child a::after{right:inherit;left:0;}
+.main202004 .recommTab  li.active a::after,
+.main202004 .recommTab  li.active a::before{content:'';display:block;position:absolute;top:0;right:0;width:1px;height:65px;background-color:#222222;}
+.main202004 .recommTab  li.active a::after{right:inherit;left:-1px;}
+.main202004 .recommTab  li.active:first-child a::after{left:0;}
+.main202004 .recommTab  li a {box-sizing:border-box; display: flex; justify-content:center; align-items:center; padding:0; width:100%;font-size:20px;font-weight:600;height:100%;color:#858585; text-align:center}
+.main202004 .recommTab  li a{background:#f2f2f2}
+.main202004 .recommTab  li.active a{color:#df5f5e;background:#fff}
+
+.main202004 .recommCont .cnt_wrap {display:none}
+.main202004 .recommCont .cnt_wrap.on {display:block}
+
+.main202004 .cnt_wrap .tabBtn {display:flex; justify-content:center; padding:7% 0 4% 0}
+.main202004 .cnt_wrap .tabBtn li:first-child:before {width:0}
+.main202004 .cnt_wrap .tabBtn li:before {display:inline-block; content:""; width:1px; height:14px; background:#e1e1e1; margin:7px 10px; vertical-align:top}
+.main202004 .cnt_wrap .tabBtn li button {color:#858585; font-size:18px; font-weight:bold}
+.main202004 .cnt_wrap .tabBtn li.on button {border-bottom:3px solid #df5f5e; padding-bottom:4px}
+.main202004 .cnt_wrap .tabBtn li.on button {color:#df5f5e}
+
+.main202004 .tabContBox {position:relative; height:355px}
+.main202004 .tabCont {position:absolute; top:0; left:0; display:block; width:100%; height:525px; overflow:hidden; opacity:0; z-index:-1;}
+.main202004 .tabCont.on {opacity:1; z-index:1;}
+.main202004 .tabCont a {display:block;}
+.main202004 .tabCont ul li {float:left; position:relative; width:213px; height:295px; margin:15px 2%; border:2px solid #d9d9d9;}
+.main202004 .tabCont ul li:first-child {margin-left:4%;}
+.main202004 .tabCont ul li .imgCont {height:172px;}
+.main202004 .tabCont ul li .imgCont img {width:100%; height:100%;}
+.main202004 .tabCont ul li .infoCont {position:relative; width:90%; height:66px; padding:10px 5%; border-top:2px solid #d9d9d9;}
+.main202004 .tabCont ul li strong.cardTit {display:block; height:70px; font-size:20px; line-height:1.2; font-weight:500; color:#4d4d4d;}
+.main202004 .tabCont ul li span.categoryTit {display:block; height:17px; margin-top:10px; font-size:17px;}
+.main202004 .tabCont ul li.btnMore {width:120px !important; height:291px; min-width:120px; margin-right:4%; border-color:#fff; font-size:12px; text-align:center;}
+.main202004 .tabCont ul li.btnMore a {display:block; width:68px; height:94px; margin:100px auto 97px;}
+.main202004 .tabCont ul li.btnMore img {margin-bottom:10px;}
+.main202004 .tabCont ul li.btnMore span {display:block; font-size:17px; color:#838383;}
+.main202004 .tabCont .imgCont {position:relative;}
+.main202004 .tabCont .imgCont .running_time{position:absolute;left:5px;bottom:8px; padding:2px 9px; border-radius:10px; background:#000; opacity:0.8; filter:alpha(opacity=80); color:#fff; font-size:12px; line-height:15px; letter-spacing:0.5px;}
+.main202004 [class^="icon_"] {position:absolute; right:2%; bottom:2%; display:inline-block; width:25%; height:31%; background-repeat:no-repeat; background-position:0 0; background-size:100% 100%; font-size:0; line-height:0;}
+.main202004 .icon_video {background-image:url('../images/common/renew2004/tag_mov.png');}
+.main202004 .icon_toon {background-image:url('../images/common/renew2004/tag_toon.png');}
+.main202004 .icon_qz {background-image:url('../images/common/renew2004/icon_qz.png');}
+.main202004 .icon_qz2 {background-image:url('../images/common/renew2004/icon_qz5.png');}
+.main202004 .icon_qz3 {background-image:url('../images/common/renew2004/icon_qz6.png');}
+.main202004 .icon_knowledge {background-image:url('../images/common/renew2004/tag_kng.png');}
+.main202004 .icon_game {background-image:url('../images/common/renew2004/tag_game.png');}
+.main202004 .icon_setGame {background-image:url('../images/common/renew2004/tag_game.png');}
+
+.main202004 .gamezone {background:url('../images/common/bg_cont.png') 0 0 no-repeat; padding:0 5.4% 30px;}
+.main202004 .gamezone .link {text-align:center; display:flex; justify-content:center; }
+.main202004 .gamezone .link li {box-sizing:border-box; width:210px; height:207px; text-align:center;letter-spacing:-1px}
+.main202004 .gamezone .link li a {color:#666; display:block; padding-top:170px; font-size:18px; font-weight:bold }
+.main202004 .gamezone .link li:nth-child(1) {background:url('../images/common/renew2004/ico_gz01.png') 50% 0 no-repeat; background-size:150px auto}
+.main202004 .gamezone .link li:nth-child(2) {background:url('../images/common/renew2004/ico_gz02.png') 50% 0 no-repeat; background-size:150px auto}
+.main202004 .gamezone .link li:nth-child(3) {background:url('../images/common/renew2004/ico_gz03.png') 50% 0 no-repeat; background-size:150px auto}
+
+.main202004 .bestCnt {background:url('../images/common/bg_cont.png') 0 0 no-repeat; padding:0 3.125% 30px; position:relative}
+.main202004 .bestCnt .tit_cardtype {padding-bottom:6%;}
+.main202004 .bestCnt .tabBest {display:flex;justify-content:center; padding:0 0 20px 0}
+.main202004 .bestCnt .tabBest li:first-child:before {width:0}
+.main202004 .bestCnt .tabBest li:before {display:inline-block; content:""; width:1px; height:10px; background:#e1e1e1; margin:0 10px; vertical-align:middle}
+.main202004 .bestCnt .tabBest li button {color:#858585; font-size:18px; font-weight:bold}
+.main202004 .bestCnt .tabBest li.on button {border-bottom:3px solid #df5f5e; padding-bottom:4px}
+.main202004 .bestCnt .tabBest li.on button {color:#df5f5e}
+.main202004 .bestCnt .swiper-pagination {z-index:1000; position:static; width:100%; display:flex; justify-content:center; margin-top:10px;}
+.main202004 .bestCnt .swiper-pagination-bullet {width:8px; height:8px; background:#d7d7d7; opacity:1; text-indent:-9999px; margin:0 2px}
+.main202004 .bestCnt .swiper-pagination-bullet-active {background: #ca2422; }
+.main202004 .bestCnt .box_list_con {margin-bottom:0}
+.main202004 .bestCnt .list_set .img_con [class^="rank"] {
+	position:absolute; display:block; top:0; left:0; width:25px; height:25px;background-color:#777777; box-shadow: 0px 3px 4px rgba(0,0,0,0.2);
+	text-align:center; line-height:25px; font-size:14px; color:#fff;
+}
+.main202004 .bestCnt .list_set .img_con .rank1 {background-color:#e74a3b;}
+.main202004 .bestCnt .cnt_wrap {height:0; visibility:hidden; overflow:hidden}
+.main202004 .bestCnt .cnt_wrap.on {height:auto; visibility:visible}
+
+.main202004 .bestCnt .cnt_wrap.on .box_list_con .list_set .card_info dt em {height:32px}
+
+
+@media (min-width: 768px) {
+	.main202004 .renew2019 .box_list_con .list_set .card_info {width: 80%;}
+}
+.main202004 .shortcut {background:url('../images/common/bg_cont.png') 0 0 no-repeat; padding:0 3.125% 30px; position:relative}
+.main202004 .shortcut ul {display:flex; justify-content:center;}
+.main202004 .shortcut ul li {height:100px; display:table; background-repeat:no-repeat; background-position:0 0; background-size:100px auto;}
+.main202004 .shortcut ul li.btn_mid_01 {background-image:url('../images/common/ico_main_tong.png'); padding-right:24px}
+.main202004 .shortcut ul li.btn_mid_02 {background-image:url('../images/common/ico_main_graph.png')}
+.main202004 .shortcut ul li a {height:100%; display:table-cell; vertical-align:middle; padding:0 0 0 110px;}
+.main202004 .shortcut ul li a span {font-size:16px; color:#9d9d9d; display:block; margin-bottom:10px; letter-spacing:-1px}
+.main202004 .shortcut ul li a strong {font-size:20px; color:#666666; font-weight:normal; letter-spacing:-1px}
+
+.main202004 .appLink {background:url('../images/common/bg_cont.png') 0 0 no-repeat; padding:0 3.125% 30px; position:relative}
+.main202004 .appLink img {float:left; width:29%;margin-left:5%;}
+.main202004 .appLink p {float:left; display:inline-block; font-size:28px; line-height:1.3; letter-spacing:-1px; color:#4d4d4d}
+.main202004 .appLink strong {display:block;}
+.main202004 .appLink a {float:left; display:block; width:40%; margin-top:2%;}
+.main202004 .appLink a img {display:block; width:100%; margin-left:0;}
+
+.main202004 .clearfix:before, .clearfix:after {content:""; display:block; height:0;}
+.main202004 .clearfix:after {clear:both;}
+
+
+@media screen and (max-width:639px) {
+	.main202004 .tit_cardtype {font-size:23px}
+
+	.main202004 .recommTab  li {height:45px}
+	.main202004 .recommTab  li:first-child a::after,
+	.main202004 .recommTab  li a::before{height:44px}
+	.main202004 .recommTab  li.active a::after,
+	.main202004 .recommTab  li.active a::before{height:45px}
+	.main202004 .recommTab  li a {font-size:18px}
+
+	.main202004 .cnt_wrap .tabBtn li button {font-size:14px}
+	.main202004 .cnt_wrap .tabBtn li:before {height:10px; margin:5px 10px;}
+
+	.main202004 .tabContBox {height:228px;} 
+	.main202004 .tabCont {height:228px;}
+	.main202004 .tabCont ul li {width:140px !important; height:201px; margin:6.5px 2%;}
+	.main202004 .tabCont ul li .imgCont {height:113px;}
+	.main202004 .tabCont ul li strong.cardTit {height:35px; font-size:13px;}
+	.main202004 .tabCont ul li span.categoryTit {font-size:12px;}
+	.main202004 .tabCont ul li.btnMore {width:60px !important; height:197px; min-width:60px;}
+	.main202004 .tabCont ul li.btnMore a {width:41px; height:67px; margin:70px auto 60px;}
+	.main202004 .tabCont ul li.btnMore span {font-size:12px;}
+
+	.main202004 .bestCnt .tabBest li button {font-size:14px}
+
+	.main202004 .gamezone .link li {height:122px}
+	.main202004 .gamezone .link li a {padding-top:100px;  font-size:13px; }
+	.main202004 .gamezone .link li:nth-child(1) {background-size:86px auto}
+	.main202004 .gamezone .link li:nth-child(2) {background-size:86px auto}
+	.main202004 .gamezone .link li:nth-child(3) {background-size:86px auto}
+
+	.main202004 .shortcut ul li {height:50px; background-size:50px auto;}
+	.main202004 .shortcut ul li.btn_mid_01 {padding-right:12px}
+	.main202004 .shortcut ul li a {padding:0 0 0 57px;}
+	.main202004 .shortcut ul li a span {font-size:12px; margin-bottom:3px;}
+	.main202004 .shortcut ul li a strong {font-size:14px; }
+	.main202004 .appLink p {font-size:14px;}
+}
+
+@media screen and (max-width:320px) {
+	.main202004 .gamezone .link li{height:100px}
+	.main202004 .gamezone .link li a {padding-top:80px; font-size:11px}
+	.main202004 .gamezone .link li:nth-child(1) {background-size:66px auto}
+	.main202004 .gamezone .link li:nth-child(2) {background-size:66px auto}
+	.main202004 .gamezone .link li:nth-child(3) {background-size:66px auto}
+
+	.main202004 .shortcut ul li {height:40px; background-size:40px auto;}
+	.main202004 .shortcut ul li a {padding:0 0 0 47px;}
+
+}
+.mainPopup {position:absolute; top:25%; left:50%; margin-left:-160px; width:320px; height:300px; z-index:99999;}
+.mainPopup a {display:block;}
+.mainPopup .content a img {max-width:320px; max-height:300px;}
+.mainPopup .foot {overflow:hidden;}
+.mainPopup .foot a {float:left; width:50%; color:#fff; text-align:center; font-size:14px; line-height:40px; background-color:#393e42;}
+.mainPopup .foot a.btnClose {border-left:1px solid #9c9fa1; box-sizing:border-box;}
+
+.dim{position:fixed; top:0; bottom:0; left:0; right:0; display:none; background:#000; opacity:0.5; filter:alpha(opacity=50); z-index:9999;}
+
+[id^="popup_"].mainPopup {top:92px}
+
